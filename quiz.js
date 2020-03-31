@@ -4,6 +4,7 @@ const questionContainerElement = document.getElementById ('question-container')
 const  questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-btn')
 var score = 0
+var counter = 0
 let shuffledQuestions, currentQuestionIndex
 
 playButton.addEventListener('click', playGame)
@@ -39,6 +40,7 @@ function showQuestion(question) {
         }
         button.addEventListener('click', selectAnswer)
         answerButtonsElement.appendChild(button)
+        
     })
 }
 
@@ -106,3 +108,6 @@ const questions = [
     }
 ]
 
+function score () {
+
+}
